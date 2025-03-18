@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">Home</a>
+    </header>
+    <main>
+        <h1 id="contacto">Formulario de Contacto</h1>
+        <form action="">
+            <label for="nombre">Nombre y Apellido</label>
+            <input type="text" id="nombre" name="Nombre">
+            <label for="edad">Edad</label>
+            <input type="number" name="Edad" id="edad">
+            <label for="domicilio">Domicilio</label>
+            <input type="text" name="Domicilio" id="domicilio">
+            <label for="correo">Correo Electronico</label>
+            <input type="email" placeholder="email@correo.com" name="Correo" id="correo">
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input type="date" id="fecha">
+            <label for="provincia">Selecciona tu Provinicia</label>
+            <select name="Provincia" id="provincia">
+                <option value="cba">Córdoba</option>
+                <option value="bsas">Buenos Aires</option>
+                <option value="md">Mendoza</option>
+                <option value="st">Salta</option>
+                <option value="sl">San Luis</option>
+                <option value="rn">Rio Negro</option>
+            </select>
+            <label for="ciudad">Seleccione tu ciudad</label>
+            <select name="Ciudad" id="ciudad">
+                <optgroup label="Córdoba">
+                    <option value="rio-tercero">Rio Tercero</option>
+                    <option value="tancacha">Tancacha</option>
+                </optgroup>
+            </select>
+            <label for="perfil">Seleccione foto de perfil</label>
+            <input type="file" name="Foto" id="perfil">
+            <label for="text">Ingrese su comentario</label>
+            <textarea name="Text-area" id="text"></textarea>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetear</button>
+        </form>
+    </main>
+</body>
+</html>
